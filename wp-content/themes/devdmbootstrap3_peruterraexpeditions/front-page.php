@@ -59,7 +59,7 @@
     </div>
   </div>
 </nav>
-<section id="quienes-somos" class="bg-green-1 no-pad pt-60">
+<section id="quienes-somos" class="no-pad pt-60">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">

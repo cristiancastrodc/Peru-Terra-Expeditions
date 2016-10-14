@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="top-widgets">
+<section id="top-widgets" class="no-pad">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
@@ -12,6 +12,7 @@
     </div>
   </div>
 </section>
+
 <nav class="navbar navbar-fixed-top" id="main-navbar">
   <div class="container">
     <div class="navbar-header">
@@ -25,19 +26,9 @@
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="<?php echo get_bloginfo( 'name' ); ?>" />
       </a>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-menu">
-      <?php
-        wp_nav_menu(
-          array(
-            'theme_location'  => 'main_menu',
-            'container_class' => 'primary-navigation',
-            'menu_class' => 'nav navbar-nav navbar-right',
-            )
-        );
-      ?>
-    </div>
   </div>
 </nav>
+
 <header>
   <div id="header">
     <div class="container-fluid">
@@ -45,19 +36,7 @@
     </div>
   </div>
 </header>
-<nav id="tours-menu">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <?php
-          wp_nav_menu( array(
-            'theme_location' => 'tours_menu'
-          ));
-        ?>
-      </div>
-    </div>
-  </div>
-</nav>
+
 <section id="main-content">
   <div id="post">
     <div class="container">
@@ -84,32 +63,6 @@
             <?php get_404_template(); ?>
           </div>
         <?php endif; ?>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="contacto">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h3>Peru Terra Expeditions</h3>
-        <?php query_posts(array('page_id' => 108)); ?>
-        <?php the_post(); ?>
-        <?php the_content(); ?>
-        <?php wp_reset_query(); ?>
-        <div class="social-icons">
-          <?php dynamic_sidebar( 'social-icons' ); ?>
-        </div>
-      </div>
-      <div class="col-sm-5">
-        <?php query_posts(array('page_id' => 111)); ?>
-        <?php the_post(); ?>
-        <h3><?php the_title(); ?></h3>
-        <?php the_content(); ?>
-        <?php wp_reset_query(); ?>
-        <form>
-          <?php echo do_shortcode('[contact-form-7 id="110" title="Contacto"]'); ?>
-        </form>
       </div>
     </div>
   </div>
