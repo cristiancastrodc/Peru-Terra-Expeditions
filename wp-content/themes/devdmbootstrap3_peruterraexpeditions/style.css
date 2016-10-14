@@ -1,0 +1,236 @@
+/*
+ Theme Name:   Peru Terra Expeditions Theme
+ Theme URI:    http://insidelab.net
+ Description:  Theme for Peru Terra Expeditions. Based on DevDmBootstrap3
+ Author:       Cristian Castro - Inside.lab Cusco
+ Author URI:   http://facebook.com/xtiancastro7
+ Template:     devdmbootstrap3
+ Version:      1.0.0
+*/
+#top-widgets {
+  background-color: #333750;
+}
+#top-widgets li {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+#top-widgets ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+li.lang-item {
+  display: inline-block;
+}
+li.menu-item {
+  text-transform: uppercase;
+}
+li.menu-item > a {
+  color: #FFF;
+  transition: background-color 0.5s ease;
+}
+li.menu-item + li {
+  border-left: 1px solid #FFF;
+}
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+.navbar-brand {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+.navbar-brand > img {
+  max-width: 200px;
+  transition: max-width 0.5s ease;
+}
+.highlight .navbar-brand > img {
+  max-width: 90px;
+}
+#main-navbar {
+  margin-top: 60px;
+  transition: all 0.5s ease;
+}
+#main-navbar.highlight {
+  margin-top: 0;
+  transition: all 0.5s ease;
+  background-color: #333750;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #333750;
+}
+.navbar-nav > li > a {
+  display: inline;
+}
+.highlight .navbar-nav > li > a {
+  display: block;
+}
+.ms-slide-info {
+  top: 30%;
+}
+.ms-info {
+  width: 50%;
+  margin: auto;
+  color: #FFF;
+}
+.ms-info > h2 {
+  font-weight: bold;
+  font-size: 48px;
+}
+.ms-bullets {
+  margin-top: 27%;
+}
+#tours-menu {
+  margin-top: -45px;
+  position: absolute;
+  width: 100%;
+}
+#tours-menu a {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFF;
+  transition: background-color 0.5s ease;
+}
+#tours-menu a:hover,
+#tours-menu a:focus {
+  text-decoration: none;
+  background-color: #9D971D;
+}
+#tours-menu li + li {
+  border-left: 1px solid #FFF;
+}
+/*
+#quienes-somos {
+  background: linear-gradient(0deg, #FFF 50%, #9D971D 50%);
+}
+*/
+#quienes-somos h1 {
+  color: #FFF;
+}
+section h1 {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-size: 30px;
+}
+#quienes-somos img {
+  border-radius: 50%;
+}
+.person-name {
+  /*color: #9D971D;*/
+  color: #000;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.pb-60 {
+  padding-bottom: 60px;
+}
+#quienes-somos .section-content {
+  font-weight: bold;
+}
+#que-hacemos {
+  background: linear-gradient(0deg, #FFF 50%, #9D971D 50%);
+}
+#que-hacemos h1 {
+  color: #FFF;
+}
+#que-hacemos .section-content {
+  font-weight: bold;
+}
+.section-title {
+  padding: 30px 0;
+}
+.section-title h3 {
+  color: #FFF;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+section:not(.no-pad) {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.tour-content {
+  padding: 60px 0;
+}
+.front-post-title {
+  text-transform: uppercase;
+  color: #842636;
+  font-weight: bold;
+}
+.read-more {
+  padding: 5px;
+  color: #FFF;
+  background-color: #842636;
+}
+.read-more:hover,
+.read-more:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+.clearfix {
+  margin-bottom: 30px;
+}
+.post-meta {
+  font-weight: bold;
+  font-size: 18px;
+}
+body {
+  padding-bottom: 0;
+}
+#contacto {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)) center bottom / 100% 20% no-repeat,
+              linear-gradient(#AEA723, #AEA723);
+
+  color: #000;
+}
+#contacto h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+#contacto .social-icons li {
+  list-style-type: none;
+}
+#contacto .social-icons .lsi-social-icons > li > a {
+  border-radius: 50%;
+}
+.wpcf7-submit {
+  background-color: #000;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.ms-info > h2 {
+  font-size: 36px;
+}
+.inner-pad {
+  padding: 0 4em;
+}
+.post-header {
+  color: #842636;
+  font-weight: bold;
+}
+.post-content {
+  padding: 30px 0;
+  text-align: justify;
+}
+.bg-green-1 {
+  background-color: #9D971D;
+}
+.bg-purple {
+  background-color: #842636;
+}
+.bg-green-2 {
+  background-color: #377C77;
+}
+.bg-gray {
+  background-color: #989987;
+}
