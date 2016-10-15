@@ -28,8 +28,11 @@ li.menu-item > a {
   color: #FFF;
   transition: background-color 0.5s ease;
 }
-li.menu-item + li {
+li.menu-item {
   border-left: 1px solid #FFF;
+}
+li.menu-item:first-child {
+  border-left: none;
 }
 .navbar {
   margin-bottom: 0;
@@ -82,25 +85,39 @@ li.menu-item + li {
   margin-top: 27%;
 }
 #tours-menu {
-  margin-top: -45px;
+  margin-top: -100px;
   position: absolute;
   width: 100%;
 }
 #tours-menu a {
-  padding: 10px;
+  padding: 15px;
   font-size: 14px;
   font-weight: bold;
   color: #FFF;
   transition: background-color 0.5s ease;
+  display: block;
+}
+#tours-menu a::after {
+  content: '|';
+  position: relative;
+  left: 15px;
+}
+#tours-menu li:last-child > a::after {
+  content: none;
 }
 #tours-menu a:hover,
 #tours-menu a:focus {
   text-decoration: none;
   background-color: #9D971D;
 }
-#tours-menu li + li {
-  border-left: 1px solid #FFF;
+/*
+#tours-menu li {
+  border-right: 1px solid #FFF;
 }
+#tours-menu li:last-child {
+  border-right: none;
+}
+*/
 #quienes-somos {
   background: linear-gradient(0deg, #FFF 50%, #9D971D 50%);
 }
@@ -262,4 +279,15 @@ body {
 .post-form {
   background-color: #AEA723;
   padding: 45px;
+}
+.team-img {
+  padding: 30px;
+}
+.highlight .navbar-nav > li.menu-item + li {
+  border-left: none;
+}
+.highlight .navbar-nav > li + li > a::before {
+  content: '|';
+  position: relative;
+  right: 15px;
 }

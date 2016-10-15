@@ -67,7 +67,7 @@
           $lang = get_locale();
           switch ($lang) {
             case 'es_ES': ?>
-              <h1>Quienes somos</h1><?php
+              <h1>Quiénes somos</h1><?php
             break;
             case 'en_US': ?>
               <h1>About us</h1> <?php
@@ -81,7 +81,7 @@
       <?php while (have_posts()): the_post(); ?>
         <div class="col-sm-6 col-md-4 text-center">
           <?php if (has_post_thumbnail()): ?>
-            <?php the_post_thumbnail( array(240, 240), array( 'class' => 'img-responsive center-block team-img' )); ?>
+            <?php the_post_thumbnail( 'medium', array( 'class' => 'img-responsive center-block team-img' )); ?>
           <?php endif ?>
           <h3 class="person-name"><?php the_title(); ?></h3>
           <?php the_content(); ?>
@@ -140,10 +140,11 @@
   <?php /*$categorias = get_categories( array('slug' => array('tours-en-puno', 'tour-cusco-y-machu-picchu', 'cusco-tradicional', 'tour-machu-picchu', 'tours-de-aventura-en-cusco', 'camino-inca')) ); */ ?>
   <?php $categorias = get_categories( array('exclude_tree' => '1,55') ); ?>
   <?php $backgrounds = array('bg-purple', 'bg-green-2', 'bg-gray'); ?>
+  <?php $indice = 0; ?>
   <?php foreach ($categorias as $categoria): ?>
     <?php query_posts( array ( 'category_name' => $categoria->slug ) ); ?>
     <section id="tour-<?php echo $categoria->slug; ?>" class="no-pad">
-      <div class="<?php echo $backgrounds[array_rand($backgrounds)]; ?> section-title">
+      <div class="<?php echo $backgrounds[$indice]; ?> section-title">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
@@ -195,6 +196,7 @@
         </div>
       </div>
     </section>
+    <?php if ($indice == 2) $indice = 0; else $indice++; ?>
   <?php endforeach ?>
 </div>
 <section id="contacto">
