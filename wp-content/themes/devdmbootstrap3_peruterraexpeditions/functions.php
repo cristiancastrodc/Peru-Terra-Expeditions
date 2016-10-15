@@ -27,8 +27,6 @@
     // wp_enqueue_script('theme-js', get_stylesheet_directory_uri() . '/js/owl.carousel.min.js', array( 'jquery' ));
     // wp_enqueue_script('theme-scroll', get_stylesheet_directory_uri() . '/js/jquery-scrollto.js', array( 'jquery' ));
     wp_enqueue_script('theme-local-js', get_stylesheet_directory_uri() . '/js/scripts.js', array( 'jquery' ));
+    wp_enqueue_script('match-height', get_stylesheet_directory_uri() . '/js/jquery.matchHeight.js', array( 'jquery' ));
   }
   add_action('wp_enqueue_scripts', 'devdmbootstrap3_peruterraexpeditions_js');
-  // Tamaños de imagen
-  add_theme_support( 'post-thumbnails' );
-  add_image_size( 'front-size', 360, 360, true );

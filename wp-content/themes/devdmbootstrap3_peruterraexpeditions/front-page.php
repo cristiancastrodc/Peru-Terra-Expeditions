@@ -137,7 +137,8 @@
 <?php endif ?>
 <?php wp_reset_query(); ?>
 <div id="tours">
-  <?php $categorias = get_categories( array('slug' => array('tours-en-puno', 'tour-cusco-y-machu-picchu', 'cusco-tradicional', 'tour-machu-picchu', 'tours-de-aventura-en-cusco', 'camino-inca')) ); ?>
+  <?php /*$categorias = get_categories( array('slug' => array('tours-en-puno', 'tour-cusco-y-machu-picchu', 'cusco-tradicional', 'tour-machu-picchu', 'tours-de-aventura-en-cusco', 'camino-inca')) ); */ ?>
+  <?php $categorias = get_categories( array('exclude_tree' => '1,55') ); ?>
   <?php $backgrounds = array('bg-purple', 'bg-green-2', 'bg-gray'); ?>
   <?php foreach ($categorias as $categoria): ?>
     <?php query_posts( array ( 'category_name' => $categoria->slug ) ); ?>
@@ -159,7 +160,8 @@
             while (have_posts()) : the_post(); ?>
               <div class="col-sm-4 inner-pad">
                 <?php if (has_post_thumbnail()): ?>
-                  <?php the_post_thumbnail(array(360, 360), array( 'class' => 'img-responsive center-block' )); ?>
+                  <div class="tour-thumbnail" style="background-image: url(<?php the_post_thumbnail_url() ?>)">
+                  </div>
                 <?php endif ?>
                 <h4 class="front-post-title"><?php the_title(); ?></h4>
                 <div class="text-justify">
@@ -179,7 +181,9 @@
                   ?>
                 </a>
                 <br>
-                <div class="post-meta text-right"><?php echo get_post_meta(get_the_ID(), 'precio', true); ?></div>
+                <div class="post-meta text-right">
+                  <?php the_field('precio'); ?>
+                </div>
               </div>
               <?php $cuenta++; ?>
               <?php if ($cuenta % 3 == 0): ?>

@@ -234,3 +234,32 @@ body {
 .bg-gray {
   background-color: #989987;
 }
+.tour-thumbnail {
+  height: 250px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.aditional-info {
+  padding: 15px;
+  background-color: #8F0E35;
+  color: #FFF;
+  font-size: 15px;
+}
+.aditional-info strong {
+  font-size: 18px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.post-form {
+  background-color: #AEA723;
+  padding: 45px;
+}
