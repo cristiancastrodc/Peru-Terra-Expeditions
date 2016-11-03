@@ -52,7 +52,16 @@
           <?php $categorias = get_categories( array('exclude_tree' => '1,55') ); ?>
           <ul class="list-inline text-uppercase text-center">
             <?php foreach ($categorias as $categoria): ?>
-              <li><a rel="m_PageScroll2id" href="#tour-<?php echo $categoria->slug; ?>"><?php echo $categoria->name; ?></a></li>
+              <li class="tour-root-link">
+                <a rel="m_PageScroll2id" href="#tour-<?php echo $categoria->slug; ?>"><?php echo $categoria->name; ?>
+                </a>
+                <ul class="sub-menu text-left">
+                  <?php query_posts( array ( 'category_name' => $categoria->slug ) ); ?>
+                  <?php while (have_posts()) : the_post(); ?>
+                    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                  <?php endwhile; ?>
+                </ul>
+              </li>
             <?php endforeach ?>
           </ul>
       </div>
@@ -139,12 +148,12 @@
 <div id="tours">
   <?php /*$categorias = get_categories( array('slug' => array('tours-en-puno', 'tour-cusco-y-machu-picchu', 'cusco-tradicional', 'tour-machu-picchu', 'tours-de-aventura-en-cusco', 'camino-inca')) ); */ ?>
   <?php $categorias = get_categories( array('exclude_tree' => '1,55') ); ?>
-  <?php $backgrounds = array('bg-purple', 'bg-green-2', 'bg-gray'); ?>
+  <?php $classes = array('purple', 'green', 'gray'); ?>
   <?php $indice = 0; ?>
   <?php foreach ($categorias as $categoria): ?>
     <?php query_posts( array ( 'category_name' => $categoria->slug ) ); ?>
-    <section id="tour-<?php echo $categoria->slug; ?>" class="no-pad">
-      <div class="<?php echo $backgrounds[$indice]; ?> section-title">
+    <section id="tour-<?php echo $categoria->slug; ?>" class="no-pad <?php echo $classes[$indice]; ?>">
+      <div class="section-title">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">

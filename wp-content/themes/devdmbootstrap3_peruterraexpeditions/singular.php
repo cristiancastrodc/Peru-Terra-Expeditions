@@ -99,7 +99,9 @@
                   </div>
                   <div class="row pt-60">
                     <div class="col-sm-12">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tripadvisor-peru-terra-expeditions.png" alt="" class="img-responsive center-block">
+                      <a href="//www.tripadvisor.com.pe/Attraction_Review-g294314-d10716151-Reviews-Peru_Terra_Expeditions-Cusco_Cusco_Region.html" target="_blank">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tripadvisor-peru-terra-expeditions.png" alt="" class="img-responsive center-block">
+                      </a>
                     </div>
                   </div>
                 </div>

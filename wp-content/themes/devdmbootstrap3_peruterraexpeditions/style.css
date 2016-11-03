@@ -105,12 +105,17 @@ li.menu-item:first-child {
 #tours-menu li:last-child > a::after {
   content: none;
 }
-#tours-menu a:hover,
+#tours-menu .tour-root-link:hover > a,
 #tours-menu a:focus {
   text-decoration: none;
   background-color: #9D971D;
 }
 /*
+#tours-menu a:hover,
+#tours-menu a:focus {
+  text-decoration: none;
+  background-color: #9D971D;
+}
 #tours-menu li {
   border-right: 1px solid #FFF;
 }
@@ -179,13 +184,12 @@ section:not(.no-pad) {
 }
 .front-post-title {
   text-transform: uppercase;
-  color: #842636;
   font-weight: bold;
 }
 .read-more {
   padding: 5px;
   color: #FFF;
-  background-color: #842636;
+  /* background-color: #842636; */
 }
 .read-more:hover,
 .read-more:focus {
@@ -242,15 +246,6 @@ body {
 .bg-green-1 {
   background-color: #9D971D;
 }
-.bg-purple {
-  background-color: #842636;
-}
-.bg-green-2 {
-  background-color: #377C77;
-}
-.bg-gray {
-  background-color: #989987;
-}
 .tour-thumbnail {
   height: 250px;
   background-position: center center;
@@ -290,4 +285,55 @@ body {
   content: '|';
   position: relative;
   right: 15px;
+}
+.sub-menu {
+  padding-left: 0;
+  list-style-type: none;
+  visibility:hidden;
+  opacity:0;
+  transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  position: absolute;
+  width: 100%;
+  padding-right: 10px;
+}
+.tour-root-link {
+  position: relative;
+}
+.tour-root-link:hover {
+  z-index: 10;
+}
+.tour-root-link:hover > .sub-menu {
+  visibility:visible;
+  opacity:1;
+  transition-delay:0s;
+}
+.sub-menu > li {
+  padding: 5px 10px;
+  color: #FFF;
+  background-color: rgba(39, 65, 99, 0.85);
+  margin-bottom: 2px;
+}
+#tours-menu .sub-menu a {
+  padding: 5px;
+}
+section.purple .section-title,
+section.purple .read-more {
+  background-color: #842636;
+}
+section.purple .front-post-title {
+  color: #842636;
+}
+section.green .section-title,
+section.green .read-more {
+  background-color: #377C77;
+}
+section.green .front-post-title {
+  color: #377C77;
+}
+section.gray .section-title,
+section.gray .read-more {
+  background-color: #989987;
+}
+section.gray .front-post-title {
+  color: #989987;
 }
