@@ -1,0 +1,2 @@
+[27-Oct-2016 11:40:09 UTC] PHP Notice:  Undefined index: tooltip in /home/insidifd/public_html/webs/peruterra2/wp-content/plugins/lightweight-social-icons/lightweight-social-icons.php on line 321
+[08-Jan-2017 11:41:53 CST6CDT] PHP Fatal error:  Call to undefined function __() in /home/peruterr/public_html/wp-admin/menu.php on line 23

@@ -118,23 +118,4 @@
   </div>
 </section>
 
-<section id="contacto">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="social-icons">
-          <?php dynamic_sidebar( 'social-icons' ); ?>
-        </div>
-      </div>
-      <div class="col-sm-5">
-        <?php query_posts(array('page_id' => 111)); ?>
-        <?php the_post(); ?>
-        <h3><?php the_title(); ?></h3>
-        <?php the_content(); ?>
-        <?php wp_reset_query(); ?>
-      </div>
-    </div>
-  </div>
-</section>
-
 <?php get_footer(); ?>

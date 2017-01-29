@@ -1,0 +1,5 @@
+[08-Jan-2017 13:24:42 CST6CDT] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/peruterr/public_html/wp-includes/functions.php on line 8
+[08-Jan-2017 13:24:42 CST6CDT] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home/peruterr/public_html/wp-includes/functions.php on line 8
+[08-Jan-2017 13:24:42 CST6CDT] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/peruterr/public_html/wp-includes/functions.php on line 8
+[19-Jan-2017 05:49:56 CST6CDT] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/peruterr/public_html/wp-includes/registration-functions.php on line 7
+[19-Jan-2017 05:49:56 CST6CDT] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/peruterr/public_html/wp-includes/registration-functions.php on line 7
