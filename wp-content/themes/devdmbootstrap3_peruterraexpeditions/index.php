@@ -6,7 +6,7 @@
 
 <section id="top-widgets">
 <?php if (dynamic_sidebar( 'social-icons' )): else: endif; ?>
-<?php if (dynamic_sidebar( 'lang-area' )): else: endif; ?>  
+<?php if (dynamic_sidebar( 'lang-area' )): else: endif; ?>
 </section>
 
 

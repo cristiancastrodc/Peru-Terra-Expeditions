@@ -7,14 +7,15 @@
  Template:     devdmbootstrap3
  Version:      1.0.0
 */
-#top-widgets {
-  background-color: #333750;
+#top {
+  background-color: #FFF;
+  padding: 15px 0;
 }
-#top-widgets li {
+#top li {
   list-style-type: none;
   margin-bottom: 0;
 }
-#top-widgets ul {
+#top ul {
   padding-left: 0;
   margin-bottom: 0;
 }
@@ -85,12 +86,7 @@ li.menu-item:first-child {
   margin-top: 27%;
 }
 #tours-menu {
-  /*
-  margin-top: -100px;
-  position: absolute;
-  width: 100%;
-  */
-  background-color: #333750;
+  background-color: #A5993F;
 }
 #tours-menu a {
   padding: 15px;
@@ -318,7 +314,7 @@ body {
 .sub-menu > li {
   padding: 5px 10px;
   color: #FFF;
-  background-color: rgba(39, 65, 99, 0.85);
+  background-color: rgba(157, 151, 29, 0.65);
   margin-bottom: 2px;
 }
 #tours-menu .sub-menu a {
@@ -368,8 +364,8 @@ section.gray .front-post-title {
   padding-right: 0;
 }
 .sub-menu-col-title {
-  background-color: rgba(39, 65, 99, 0.85);
-  border-bottom: 5px solid #9d971d;
+  background-color: #9d971d;
+  border-bottom: 5px solid rgba(39, 65, 99, 0.85);
 }
 
 @media screen and (max-width: 767px) {

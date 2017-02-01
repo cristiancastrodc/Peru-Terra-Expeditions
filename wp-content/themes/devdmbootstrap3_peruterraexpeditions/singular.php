@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
-<section id="top-widgets" class="no-pad">
+<section id="top">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-        <?php if (dynamic_sidebar( 'social-icons' )): else: endif; ?>
-      </div>
-      <div class="col-sm-6 text-right">
-        <?php if (dynamic_sidebar( 'lang-area' )): else: endif; ?>
+      <div class="col-sm-12">
+        <ul class="list-inline">
+          <?php if (dynamic_sidebar( 'lang-area' )): else: endif; ?>
+          <?php if (dynamic_sidebar( 'social-icons' )): else: endif; ?>
+        </ul>
       </div>
     </div>
   </div>
