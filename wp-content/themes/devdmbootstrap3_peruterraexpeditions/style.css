@@ -368,6 +368,10 @@ section.gray .front-post-title {
   border-bottom: 5px solid rgba(39, 65, 99, 0.85);
 }
 
+.tour-root-link:last-child .sub-menu-container {
+  right: 0;
+}
+
 @media screen and (max-width: 767px) {
   li.tour-root-link {
     display: block;
