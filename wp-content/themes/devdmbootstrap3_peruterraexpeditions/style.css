@@ -374,3 +374,24 @@ section.gray .front-post-title {
     width: 100%;
   }
 }
+
+/******* COPYRIGHT CSS *******/
+#copyright {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 3;
+}
+#copyright a {
+  display: block;
+  height: 8px;
+  width: 72px;
+  transition: background 0.3s;
+  background: url('images/insidelab.png') no-repeat;
+  background-position: bottom;
+  z-index: 10;
+}
+#copyright a:hover {
+  transition: background 0.3s;
+  background-position: top;
+}
